@@ -11,7 +11,6 @@ let capituloAtual = 1
 function tocarFaixa() {
   audio.play()
   taTocando = true
-  console.log('Deu play!')
 
   botaoPlayPause.classList.add('tocando')
 }
@@ -19,7 +18,6 @@ function tocarFaixa() {
 function pausarFaixa() {
   audio.pause()
   taTocando = false
-  console.log('Deu pause!')
 
   botaoPlayPause.classList.remove('tocando')
 }
@@ -33,8 +31,6 @@ function tocarOuPausar() {
 }
 
 function proximoCapitulo() {
-  console.log('Clicou próximo!')
-
   pausarFaixa()
 
   if (capituloAtual < qtdCapitulos) {
@@ -48,8 +44,6 @@ function proximoCapitulo() {
 }
 
 function capituloAnerior() {
-  console.log('Clicou anterior!')
-
   pausarFaixa()
 
   if (capituloAtual === 1) {
